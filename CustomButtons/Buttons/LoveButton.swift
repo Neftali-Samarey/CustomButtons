@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct LoveButton: View {
+
+    @State var performedFavoriteSelection = false
+
     var body: some View {
         Button {
-            print("Tapped")
+            self.performedFavoriteSelection.toggle()
         } label: {
-            HStack {
-                Image(systemName: "bookmark.fill")
-                Text("Bookmark")
-            }
+            Image(systemName: self.performedFavoriteSelection ? "heart" : "heart.fill")
         }
-        .buttonStyle(GradientButtonStyle())
-
+        .font(.largeTitle)
+        .buttonStyle(LoveReactionButtonStyle())
     }
 }
 
