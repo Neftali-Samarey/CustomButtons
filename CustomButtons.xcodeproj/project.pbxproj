@@ -11,6 +11,8 @@
 		EDC4B7ED28F99ED4000F0388 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC4B7EC28F99ED4000F0388 /* ContentView.swift */; };
 		EDC4B7EF28F99ED6000F0388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC4B7EE28F99ED6000F0388 /* Assets.xcassets */; };
 		EDC4B7F228F99ED6000F0388 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC4B7F128F99ED6000F0388 /* Preview Assets.xcassets */; };
+		EDC4B7FA28F99F42000F0388 /* LoveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC4B7F928F99F42000F0388 /* LoveButton.swift */; };
+		EDC4B7FD28F9A2FF000F0388 /* GradientButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC4B7FC28F9A2FF000F0388 /* GradientButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		EDC4B7EC28F99ED4000F0388 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EDC4B7EE28F99ED6000F0388 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDC4B7F128F99ED6000F0388 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EDC4B7F928F99F42000F0388 /* LoveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveButton.swift; sourceTree = "<group>"; };
+		EDC4B7FC28F9A2FF000F0388 /* GradientButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 			children = (
 				EDC4B7EA28F99ED4000F0388 /* CustomButtonsApp.swift */,
 				EDC4B7EC28F99ED4000F0388 /* ContentView.swift */,
+				EDC4B7F828F99F23000F0388 /* Buttons */,
 				EDC4B7EE28F99ED6000F0388 /* Assets.xcassets */,
 				EDC4B7F028F99ED6000F0388 /* Preview Content */,
 			);
@@ -65,6 +70,23 @@
 				EDC4B7F128F99ED6000F0388 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EDC4B7F828F99F23000F0388 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				EDC4B7F928F99F42000F0388 /* LoveButton.swift */,
+				EDC4B7FB28F9A2E1000F0388 /* Modifiers */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		EDC4B7FB28F9A2E1000F0388 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				EDC4B7FC28F9A2FF000F0388 /* GradientButtonStyle.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +160,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDC4B7ED28F99ED4000F0388 /* ContentView.swift in Sources */,
+				EDC4B7FA28F99F42000F0388 /* LoveButton.swift in Sources */,
 				EDC4B7EB28F99ED4000F0388 /* CustomButtonsApp.swift in Sources */,
+				EDC4B7FD28F9A2FF000F0388 /* GradientButtonStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
