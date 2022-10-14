@@ -13,6 +13,7 @@
 		EDC4B7F228F99ED6000F0388 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC4B7F128F99ED6000F0388 /* Preview Assets.xcassets */; };
 		EDC4B7FA28F99F42000F0388 /* LoveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC4B7F928F99F42000F0388 /* LoveButton.swift */; };
 		EDC4B7FD28F9A2FF000F0388 /* GradientButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC4B7FC28F9A2FF000F0388 /* GradientButtonStyle.swift */; };
+		EDC4B7FF28F9A6B8000F0388 /* LoveReactionButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC4B7FE28F9A6B8000F0388 /* LoveReactionButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		EDC4B7F128F99ED6000F0388 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EDC4B7F928F99F42000F0388 /* LoveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveButton.swift; sourceTree = "<group>"; };
 		EDC4B7FC28F9A2FF000F0388 /* GradientButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonStyle.swift; sourceTree = "<group>"; };
+		EDC4B7FE28F9A6B8000F0388 /* LoveReactionButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveReactionButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				EDC4B7FC28F9A2FF000F0388 /* GradientButtonStyle.swift */,
+				EDC4B7FE28F9A6B8000F0388 /* LoveReactionButtonStyle.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			files = (
 				EDC4B7ED28F99ED4000F0388 /* ContentView.swift in Sources */,
 				EDC4B7FA28F99F42000F0388 /* LoveButton.swift in Sources */,
+				EDC4B7FF28F9A6B8000F0388 /* LoveReactionButtonStyle.swift in Sources */,
 				EDC4B7EB28F99ED4000F0388 /* CustomButtonsApp.swift in Sources */,
 				EDC4B7FD28F9A2FF000F0388 /* GradientButtonStyle.swift in Sources */,
 			);
