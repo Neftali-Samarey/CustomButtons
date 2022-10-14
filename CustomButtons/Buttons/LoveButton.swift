@@ -16,6 +16,9 @@ struct LoveButton: View {
             self.performedFavoriteSelection.toggle()
         } label: {
             Image(systemName: !self.performedFavoriteSelection ? "heart" : "heart.fill")
+                // test animation modifiers
+                /*.rotationEffect(.degrees(self.performedFavoriteSelection ? 360.0 : 0.0))
+                .animation(self.performedFavoriteSelection ? Animation.linear(duration: 0.5) : nil) */
         }
         .font(.largeTitle)
         .buttonStyle(LoveReactionButtonStyle())
