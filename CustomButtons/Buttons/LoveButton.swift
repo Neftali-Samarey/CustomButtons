@@ -15,7 +15,7 @@ struct LoveButton: View {
         Button {
             self.performedFavoriteSelection.toggle()
         } label: {
-            Image(systemName: self.performedFavoriteSelection ? "heart" : "heart.fill")
+            Image(systemName: !self.performedFavoriteSelection ? "heart" : "heart.fill")
         }
         .font(.largeTitle)
         .buttonStyle(LoveReactionButtonStyle())
