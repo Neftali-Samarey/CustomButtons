@@ -10,18 +10,30 @@ import SwiftUI
 struct LoveButton: View {
 
     @State var performedFavoriteSelection = false
+    @State var isPressed = false
+    private let pressedStateValue: CGFloat = 1.56
+    private let defaultStateValue: CGFloat = 1.0
 
     var body: some View {
         Button {
+            // toggles the selection state
             self.performedFavoriteSelection.toggle()
         } label: {
             Image(systemName: !self.performedFavoriteSelection ? "heart" : "heart.fill")
-                // test animation modifiers
-                /*.rotationEffect(.degrees(self.performedFavoriteSelection ? 360.0 : 0.0))
-                .animation(self.performedFavoriteSelection ? Animation.linear(duration: 0.5) : nil) */
         }
         .font(.largeTitle)
         .buttonStyle(LoveReactionButtonStyle())
+        .opacity(isPressed ? 0.6 : 1.0)
+        .scaleEffect(isPressed ? pressedStateValue : defaultStateValue)
+        .pressedEvents {
+            withAnimation(.easeIn(duration: 0.25)) {
+                self.isPressed = true
+            }
+        } onRelease: {
+            withAnimation {
+                self.isPressed = false
+            }
+        }
     }
 }
 

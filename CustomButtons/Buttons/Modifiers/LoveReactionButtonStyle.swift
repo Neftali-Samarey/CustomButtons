@@ -7,11 +7,13 @@
 
 import SwiftUI
 
-/// Style effect: Will allow the button to react with an animation effect that eases out/in.
 struct LoveReactionButtonStyle: PrimitiveButtonStyle {
+
+    @Environment(\.colorScheme) var colorScheme
+
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .foregroundColor(.black)
+            .background(colorScheme == .dark ? Color.black : Color.white)
             .onTapGesture {
                 // allows the button to perform its action call
                 configuration.trigger()

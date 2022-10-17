@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED4FF23928FC8C1F00EC89DA /* TapAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4FF23828FC8C1F00EC89DA /* TapAnimation.swift */; };
 		EDC4B7EB28F99ED4000F0388 /* CustomButtonsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC4B7EA28F99ED4000F0388 /* CustomButtonsApp.swift */; };
 		EDC4B7ED28F99ED4000F0388 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC4B7EC28F99ED4000F0388 /* ContentView.swift */; };
 		EDC4B7EF28F99ED6000F0388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC4B7EE28F99ED6000F0388 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED4FF23828FC8C1F00EC89DA /* TapAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapAnimation.swift; sourceTree = "<group>"; };
 		EDC4B7E728F99ED4000F0388 /* CustomButtons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomButtons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC4B7EA28F99ED4000F0388 /* CustomButtonsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonsApp.swift; sourceTree = "<group>"; };
 		EDC4B7EC28F99ED4000F0388 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +40,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED4FF23728FC8C0000EC89DA /* View Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				ED4FF23828FC8C1F00EC89DA /* TapAnimation.swift */,
+			);
+			path = "View Modifiers";
+			sourceTree = "<group>";
+		};
 		EDC4B7DE28F99ED4000F0388 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				EDC4B7F928F99F42000F0388 /* LoveButton.swift */,
+				ED4FF23728FC8C0000EC89DA /* View Modifiers */,
 				EDC4B7FB28F9A2E1000F0388 /* Modifiers */,
 			);
 			path = Buttons;
@@ -164,6 +175,7 @@
 			files = (
 				EDC4B7ED28F99ED4000F0388 /* ContentView.swift in Sources */,
 				EDC4B7FA28F99F42000F0388 /* LoveButton.swift in Sources */,
+				ED4FF23928FC8C1F00EC89DA /* TapAnimation.swift in Sources */,
 				EDC4B7FF28F9A6B8000F0388 /* LoveReactionButtonStyle.swift in Sources */,
 				EDC4B7EB28F99ED4000F0388 /* CustomButtonsApp.swift in Sources */,
 				EDC4B7FD28F9A2FF000F0388 /* GradientButtonStyle.swift in Sources */,
