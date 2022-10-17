@@ -25,7 +25,7 @@ struct LoveButton: View {
         } label: {
             Image(systemName: !self.performedFavoriteSelection ? "heart" : "heart.fill")
         }
-        .font(.largeTitle)
+        .font(.title)
         .buttonStyle(LoveReactionButtonStyle())
         .opacity(isPressed ? 0.6 : 1.0)
         .scaleEffect(isPressed ? pressedStateValue : defaultStateValue)

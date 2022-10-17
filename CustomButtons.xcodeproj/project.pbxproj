@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		ED4FF23928FC8C1F00EC89DA /* TapAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4FF23828FC8C1F00EC89DA /* TapAnimation.swift */; };
+		ED4FF23D28FD03FE00EC89DA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4FF23C28FD03FE00EC89DA /* User.swift */; };
+		ED4FF24128FD04B500EC89DA /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4FF24028FD04B500EC89DA /* QuoteView.swift */; };
 		EDC4B7EB28F99ED4000F0388 /* CustomButtonsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC4B7EA28F99ED4000F0388 /* CustomButtonsApp.swift */; };
 		EDC4B7ED28F99ED4000F0388 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC4B7EC28F99ED4000F0388 /* ContentView.swift */; };
 		EDC4B7EF28F99ED6000F0388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC4B7EE28F99ED6000F0388 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		ED4FF23828FC8C1F00EC89DA /* TapAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapAnimation.swift; sourceTree = "<group>"; };
+		ED4FF23C28FD03FE00EC89DA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		ED4FF24028FD04B500EC89DA /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
 		EDC4B7E728F99ED4000F0388 /* CustomButtons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomButtons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC4B7EA28F99ED4000F0388 /* CustomButtonsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonsApp.swift; sourceTree = "<group>"; };
 		EDC4B7EC28F99ED4000F0388 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +52,31 @@
 			path = "View Modifiers";
 			sourceTree = "<group>";
 		};
+		ED4FF23A28FD03EA00EC89DA /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				ED4FF23B28FD03F000EC89DA /* Model */,
+				ED4FF23F28FD049900EC89DA /* View */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		ED4FF23B28FD03F000EC89DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED4FF23C28FD03FE00EC89DA /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ED4FF23F28FD049900EC89DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED4FF24028FD04B500EC89DA /* QuoteView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		EDC4B7DE28F99ED4000F0388 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +98,7 @@
 			children = (
 				EDC4B7EA28F99ED4000F0388 /* CustomButtonsApp.swift */,
 				EDC4B7EC28F99ED4000F0388 /* ContentView.swift */,
+				ED4FF23A28FD03EA00EC89DA /* Feed */,
 				EDC4B7F828F99F23000F0388 /* Buttons */,
 				EDC4B7EE28F99ED6000F0388 /* Assets.xcassets */,
 				EDC4B7F028F99ED6000F0388 /* Preview Content */,
@@ -176,9 +206,11 @@
 				EDC4B7ED28F99ED4000F0388 /* ContentView.swift in Sources */,
 				EDC4B7FA28F99F42000F0388 /* LoveButton.swift in Sources */,
 				ED4FF23928FC8C1F00EC89DA /* TapAnimation.swift in Sources */,
+				ED4FF24128FD04B500EC89DA /* QuoteView.swift in Sources */,
 				EDC4B7FF28F9A6B8000F0388 /* LoveReactionButtonStyle.swift in Sources */,
 				EDC4B7EB28F99ED4000F0388 /* CustomButtonsApp.swift in Sources */,
 				EDC4B7FD28F9A2FF000F0388 /* GradientButtonStyle.swift in Sources */,
+				ED4FF23D28FD03FE00EC89DA /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
