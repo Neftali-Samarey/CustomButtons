@@ -18,6 +18,10 @@ struct LoveButton: View {
         Button {
             // toggles the selection state
             self.performedFavoriteSelection.toggle()
+
+            // Optional feedback generator
+            let hapticFeedback = UIImpactFeedbackGenerator(style: .medium)
+            hapticFeedback.impactOccurred()
         } label: {
             Image(systemName: !self.performedFavoriteSelection ? "heart" : "heart.fill")
         }
