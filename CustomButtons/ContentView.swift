@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import FirstPackage
 
 struct ContentView: View {
+
+    @State var tabIndex = 0
+
     var body: some View {
         NavigationView {
             ScrollView {
@@ -21,6 +25,9 @@ struct ContentView: View {
             }
             .navigationTitle("Workplace Quotes")
         }
+
+        // Usage of package
+        FirstPackage(selectedIndex: $tabIndex)
     }
 }
 

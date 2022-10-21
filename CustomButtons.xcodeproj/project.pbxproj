@@ -10,6 +10,7 @@
 		ED4FF23928FC8C1F00EC89DA /* TapAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4FF23828FC8C1F00EC89DA /* TapAnimation.swift */; };
 		ED4FF23D28FD03FE00EC89DA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4FF23C28FD03FE00EC89DA /* User.swift */; };
 		ED4FF24128FD04B500EC89DA /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4FF24028FD04B500EC89DA /* QuoteView.swift */; };
+		ED4FF2482902811B00EC89DA /* FirstPackage in Frameworks */ = {isa = PBXBuildFile; productRef = ED4FF2472902811B00EC89DA /* FirstPackage */; };
 		EDC4B7EB28F99ED4000F0388 /* CustomButtonsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC4B7EA28F99ED4000F0388 /* CustomButtonsApp.swift */; };
 		EDC4B7ED28F99ED4000F0388 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC4B7EC28F99ED4000F0388 /* ContentView.swift */; };
 		EDC4B7EF28F99ED6000F0388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC4B7EE28F99ED6000F0388 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED4FF2482902811B00EC89DA /* FirstPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +151,9 @@
 			dependencies = (
 			);
 			name = CustomButtons;
+			packageProductDependencies = (
+				ED4FF2472902811B00EC89DA /* FirstPackage */,
+			);
 			productName = CustomButtons;
 			productReference = EDC4B7E728F99ED4000F0388 /* CustomButtons.app */;
 			productType = "com.apple.product-type.application";
@@ -177,6 +182,9 @@
 				Base,
 			);
 			mainGroup = EDC4B7DE28F99ED4000F0388;
+			packageReferences = (
+				ED4FF2462902811B00EC89DA /* XCRemoteSwiftPackageReference "FirstPackage" */,
+			);
 			productRefGroup = EDC4B7E828F99ED4000F0388 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -411,6 +419,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ED4FF2462902811B00EC89DA /* XCRemoteSwiftPackageReference "FirstPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Neftali-Samarey/FirstPackage.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ED4FF2472902811B00EC89DA /* FirstPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED4FF2462902811B00EC89DA /* XCRemoteSwiftPackageReference "FirstPackage" */;
+			productName = FirstPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EDC4B7DF28F99ED4000F0388 /* Project object */;
 }
