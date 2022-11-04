@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct SheetView: View {
+
+    @Environment(\.presentationMode) var presentationMode
+
     var body: some View {
         VStack(alignment: .center) {
             Spacer()
@@ -26,7 +29,7 @@ struct SheetView: View {
             Spacer()
             // button
             Button("Done", action: {
-                // action dismiss
+                presentationMode.wrappedValue.dismiss()
             })
             .frame(width: UIScreen.main.bounds.width - 80, height: 50)
             .background(Color.black)
