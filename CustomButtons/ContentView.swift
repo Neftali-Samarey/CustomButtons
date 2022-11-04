@@ -11,8 +11,16 @@ import FirstPackage
 struct ContentView: View {
 
     @State var tabIndex = 0
+    @State private var showModal: Bool = false
+
+    // Initialize the intro animation
 
     var body: some View {
+
+        GroupAnimationView()
+            .background(Color.cyan)
+            
+
         NavigationView {
             ScrollView {
                 VStack {
@@ -24,6 +32,12 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Workplace Quotes")
+        }
+        .onAppear {
+            showModal.toggle()
+        }
+        .sheet(isPresented: $showModal) {
+            SheetView()
         }
 
         // Usage of package

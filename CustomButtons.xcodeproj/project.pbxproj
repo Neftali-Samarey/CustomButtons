@@ -11,6 +11,10 @@
 		ED4FF23D28FD03FE00EC89DA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4FF23C28FD03FE00EC89DA /* User.swift */; };
 		ED4FF24128FD04B500EC89DA /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4FF24028FD04B500EC89DA /* QuoteView.swift */; };
 		ED4FF2482902811B00EC89DA /* FirstPackage in Frameworks */ = {isa = PBXBuildFile; productRef = ED4FF2472902811B00EC89DA /* FirstPackage */; };
+		ED7997E229033188009766D2 /* GroupAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7997E129033188009766D2 /* GroupAnimationView.swift */; };
+		ED7997E5290332A3009766D2 /* LeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7997E4290332A3009766D2 /* LeadingView.swift */; };
+		ED7997E7290332C1009766D2 /* TrailingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7997E6290332C1009766D2 /* TrailingView.swift */; };
+		ED7997EA2914D678009766D2 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7997E92914D678009766D2 /* SheetView.swift */; };
 		EDC4B7EB28F99ED4000F0388 /* CustomButtonsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC4B7EA28F99ED4000F0388 /* CustomButtonsApp.swift */; };
 		EDC4B7ED28F99ED4000F0388 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC4B7EC28F99ED4000F0388 /* ContentView.swift */; };
 		EDC4B7EF28F99ED6000F0388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC4B7EE28F99ED6000F0388 /* Assets.xcassets */; };
@@ -24,6 +28,10 @@
 		ED4FF23828FC8C1F00EC89DA /* TapAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapAnimation.swift; sourceTree = "<group>"; };
 		ED4FF23C28FD03FE00EC89DA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ED4FF24028FD04B500EC89DA /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
+		ED7997E129033188009766D2 /* GroupAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAnimationView.swift; sourceTree = "<group>"; };
+		ED7997E4290332A3009766D2 /* LeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadingView.swift; sourceTree = "<group>"; };
+		ED7997E6290332C1009766D2 /* TrailingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingView.swift; sourceTree = "<group>"; };
+		ED7997E92914D678009766D2 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
 		EDC4B7E728F99ED4000F0388 /* CustomButtons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomButtons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC4B7EA28F99ED4000F0388 /* CustomButtonsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonsApp.swift; sourceTree = "<group>"; };
 		EDC4B7EC28F99ED4000F0388 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +87,32 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		ED7997E02903316D009766D2 /* GroupAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				ED7997E129033188009766D2 /* GroupAnimationView.swift */,
+				ED7997E32903328E009766D2 /* GroupViews */,
+			);
+			path = GroupAnimation;
+			sourceTree = "<group>";
+		};
+		ED7997E32903328E009766D2 /* GroupViews */ = {
+			isa = PBXGroup;
+			children = (
+				ED7997E4290332A3009766D2 /* LeadingView.swift */,
+				ED7997E6290332C1009766D2 /* TrailingView.swift */,
+			);
+			path = GroupViews;
+			sourceTree = "<group>";
+		};
+		ED7997E82914D649009766D2 /* ActionSheetView */ = {
+			isa = PBXGroup;
+			children = (
+				ED7997E92914D678009766D2 /* SheetView.swift */,
+			);
+			path = ActionSheetView;
+			sourceTree = "<group>";
+		};
 		EDC4B7DE28F99ED4000F0388 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +134,8 @@
 			children = (
 				EDC4B7EA28F99ED4000F0388 /* CustomButtonsApp.swift */,
 				EDC4B7EC28F99ED4000F0388 /* ContentView.swift */,
+				ED7997E82914D649009766D2 /* ActionSheetView */,
+				ED7997E02903316D009766D2 /* GroupAnimation */,
 				ED4FF23A28FD03EA00EC89DA /* Feed */,
 				EDC4B7F828F99F23000F0388 /* Buttons */,
 				EDC4B7EE28F99ED6000F0388 /* Assets.xcassets */,
@@ -213,11 +249,15 @@
 			files = (
 				EDC4B7ED28F99ED4000F0388 /* ContentView.swift in Sources */,
 				EDC4B7FA28F99F42000F0388 /* LoveButton.swift in Sources */,
+				ED7997E229033188009766D2 /* GroupAnimationView.swift in Sources */,
+				ED7997E7290332C1009766D2 /* TrailingView.swift in Sources */,
+				ED7997E5290332A3009766D2 /* LeadingView.swift in Sources */,
 				ED4FF23928FC8C1F00EC89DA /* TapAnimation.swift in Sources */,
 				ED4FF24128FD04B500EC89DA /* QuoteView.swift in Sources */,
 				EDC4B7FF28F9A6B8000F0388 /* LoveReactionButtonStyle.swift in Sources */,
 				EDC4B7EB28F99ED4000F0388 /* CustomButtonsApp.swift in Sources */,
 				EDC4B7FD28F9A2FF000F0388 /* GradientButtonStyle.swift in Sources */,
+				ED7997EA2914D678009766D2 /* SheetView.swift in Sources */,
 				ED4FF23D28FD03FE00EC89DA /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
